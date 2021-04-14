@@ -1,0 +1,126 @@
+service: sweatworks
+app: sweatworks-app
+org: pereirapy
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  lambdaHashingVersion: 20201221
+  memorySize: 128
+  timeout: 30
+
+plugins:
+  - serverless-offline
+
+functions:
+  getAllAuthors:
+    handler: handler.getAllAuthors
+    events:
+      - http:
+          path: authors
+          method: get
+          cors:
+            origin: '*'
+            headers: '*'         
+            allowCredentials: true
+  getOneAuthor:
+    handler: handler.getOneAuthor
+    events:
+      - http:
+          path: authors/{id}
+          method: get
+          cors:
+            origin: '*'
+            headers: '*'         
+            allowCredentials: true
+  createAuthor:
+    handler: handler.createAuthor
+    events:
+      - http:
+          path: authors
+          method: post
+          cors:
+            origin: '*'
+            headers: '*'         
+            allowCredentials: true
+  updateAuthor:
+    handler: handler.updateAuthor
+    events:
+      - http:
+          path: authors/{id}
+          method: put
+          cors:
+            origin: '*'
+            headers: '*'         
+            allowCredentials: true
+  deleteOneAuthor:
+    handler: handler.deleteOneAuthor
+    events:
+      - http:
+          path: authors/{id}
+          method: delete
+          cors:
+            origin: '*'
+            headers: '*'         
+            allowCredentials: true
+  getFiltersPublications:
+    handler: handler.getFiltersPublications
+    events:
+      - http:
+          path: publications/filters
+          method: get
+          cors:
+            origin: '*'
+            headers: '*'         
+            allowCredentials: true
+  getAllPublications:
+    handler: handler.getAllPublications
+    events:
+      - http:
+          path: publications
+          method: get
+          cors:
+            origin: '*'
+            headers: '*'         
+            allowCredentials: true
+  getOnePublication:
+    handler: handler.getOnePublication
+    events:
+      - http:
+          path: publications/{id}
+          method: get
+          cors:
+            origin: '*'
+            headers: '*'         
+            allowCredentials: true
+  createPublication:
+    handler: handler.createPublication
+    events:
+      - http:
+          path: publications
+          method: post
+          cors:
+            origin: '*'
+            headers: '*'         
+            allowCredentials: true
+  updatePublication:
+    handler: handler.updatePublication
+    events:
+      - http:
+          path: publications/{id}
+          method: put
+          cors:
+            origin: '*'
+            headers: '*'         
+            allowCredentials: true
+  deleteOnePublication:
+    handler: handler.deleteOnePublication
+    events:
+      - http:
+          path: publications/{id}
+          method: delete
+          cors:
+            origin: '*'
+            headers: '*'         
+            allowCredentials: true
