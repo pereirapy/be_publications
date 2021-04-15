@@ -8,7 +8,8 @@
   deploy: serverless deploy
 
 URL for test:
-FE: https://master.drvn5r210lwsu.amplifyapp.com
+FE: https://main.drvn5r210lwsu.amplifyapp.com
+
 
 BE Serverless Dashboard: https://app.serverless.com/pereirapy/apps/sweatworks-app/sweatworks/dev/us-east-1
 BE End-point: https://3zxe02fc86.execute-api.us-east-1.amazonaws.com/dev/  
