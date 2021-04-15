@@ -3,7 +3,7 @@ const { parseOrderBy } = require('../../shared/helpers')
 const { getOr } = require('lodash/fp')
 
 const getAll = async query => {
-  const sort = getOr('firstName:ASC,publications.createdAt:DESC', 'sort', query)
+  const sort = getOr('firstName:ASC', 'sort', query)
   const offset = getOr(0, 'currentPage', query)
   const limit = getOr(50, 'perPage', query)
   const result = await authors.findAll({

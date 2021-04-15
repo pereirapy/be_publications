@@ -12,8 +12,9 @@ FE: https://main.drvn5r210lwsu.amplifyapp.com
 
 
 BE Serverless Dashboard: https://app.serverless.com/pereirapy/apps/sweatworks-app/sweatworks/dev/us-east-1
+                         
 BE End-point: https://3zxe02fc86.execute-api.us-east-1.amazonaws.com/dev/  
-
+              
 Somes explanations:
 - The database on AWS RDS is open to WorldWide to be easier access and make changes
 - The CORS is allow everthing for the same reason
