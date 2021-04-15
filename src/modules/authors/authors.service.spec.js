@@ -24,7 +24,10 @@ const deleteAll = async () =>
 const createData = async () =>
   await Promise.all(map(data => authors.create(data), stubAuthors))
 
-beforeAll(async () => await createData())
+beforeAll(async () => {
+  await deleteAll()
+  return await createData()
+})
 
 afterAll(async () => await deleteAll())
 

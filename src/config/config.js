@@ -2,7 +2,8 @@
 'use strict'
 
 require('dotenv').config()
-const env = process.env.CURRENT_ENVIRONMENT || 'development'
+const env =
+  process.env.NODE_ENV || process.env.CURRENT_ENVIRONMENT || 'development'
 
 const variablesEnvironment = {
   development: {
@@ -27,10 +28,10 @@ const variablesEnvironment = {
   },
   test: {
     dialect: 'postgres',
-    database: process.env.DATABASE + '-test',
-    username: process.env.USERNAME,
-    password: process.env.PASSWORD,
-    host: process.env.HOST,
+    database: process.env.DATABASE_TEST,
+    username: process.env.USERNAME_TEST,
+    password: process.env.PASSWORD_TEST,
+    host: process.env.HOST_TEST,
     define: {
       charset: 'utf8',
       dialectOptions: { collate: 'utf8_general_ci' }

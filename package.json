@@ -5,7 +5,7 @@
   "main": "handler.js",
   "scripts": {
     "test": "NODE_ENV=test ./node_modules/.bin/sequelize db:migrate && node ./node_modules/jest/bin/jest.js --forceExit --detectOpenHandles --runInBand",
-    "test:watch": "cross-env NODE_ENV=test node ./node_modules/jest/bin/jest.js --watch --detectOpenHandles --runInBand",
+    "test:watch": "NODE_ENV=test node ./node_modules/jest/bin/jest.js --watch --detectOpenHandles --runInBand",
     "init": "npm install",
     "migrate": "./node_modules/.bin/sequelize db:migrate",
     "migrate:undo": "./node_modules/.bin/sequelize db:migrate:undo",

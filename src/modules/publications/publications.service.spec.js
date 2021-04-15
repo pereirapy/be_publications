@@ -48,7 +48,10 @@ const createData = async () => {
   )
 }
 
-beforeAll(async () => await createData())
+beforeAll(async () => {
+  await deleteAll()
+  return await createData()
+})
 
 afterAll(async () => await deleteAll())
 

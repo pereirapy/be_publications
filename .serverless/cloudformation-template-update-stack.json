@@ -327,7 +327,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/sweatworks/dev/1618429282392-2021-04-14T19:41:22.392Z/sweatworks.zip"
+          "S3Key": "serverless/sweatworks/dev/1618498481834-2021-04-15T14:54:41.834Z/sweatworks.zip"
         },
         "Handler": "s_getAllAuthors.handler",
         "Runtime": "nodejs12.x",
@@ -352,7 +352,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/sweatworks/dev/1618429282392-2021-04-14T19:41:22.392Z/sweatworks.zip"
+          "S3Key": "serverless/sweatworks/dev/1618498481834-2021-04-15T14:54:41.834Z/sweatworks.zip"
         },
         "Handler": "s_getOneAuthor.handler",
         "Runtime": "nodejs12.x",
@@ -377,7 +377,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/sweatworks/dev/1618429282392-2021-04-14T19:41:22.392Z/sweatworks.zip"
+          "S3Key": "serverless/sweatworks/dev/1618498481834-2021-04-15T14:54:41.834Z/sweatworks.zip"
         },
         "Handler": "s_createAuthor.handler",
         "Runtime": "nodejs12.x",
@@ -402,7 +402,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/sweatworks/dev/1618429282392-2021-04-14T19:41:22.392Z/sweatworks.zip"
+          "S3Key": "serverless/sweatworks/dev/1618498481834-2021-04-15T14:54:41.834Z/sweatworks.zip"
         },
         "Handler": "s_updateAuthor.handler",
         "Runtime": "nodejs12.x",
@@ -427,7 +427,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/sweatworks/dev/1618429282392-2021-04-14T19:41:22.392Z/sweatworks.zip"
+          "S3Key": "serverless/sweatworks/dev/1618498481834-2021-04-15T14:54:41.834Z/sweatworks.zip"
         },
         "Handler": "s_deleteOneAuthor.handler",
         "Runtime": "nodejs12.x",
@@ -452,7 +452,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/sweatworks/dev/1618429282392-2021-04-14T19:41:22.392Z/sweatworks.zip"
+          "S3Key": "serverless/sweatworks/dev/1618498481834-2021-04-15T14:54:41.834Z/sweatworks.zip"
         },
         "Handler": "s_getFiltersPublications.handler",
         "Runtime": "nodejs12.x",
@@ -477,7 +477,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/sweatworks/dev/1618429282392-2021-04-14T19:41:22.392Z/sweatworks.zip"
+          "S3Key": "serverless/sweatworks/dev/1618498481834-2021-04-15T14:54:41.834Z/sweatworks.zip"
         },
         "Handler": "s_getAllPublications.handler",
         "Runtime": "nodejs12.x",
@@ -502,7 +502,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/sweatworks/dev/1618429282392-2021-04-14T19:41:22.392Z/sweatworks.zip"
+          "S3Key": "serverless/sweatworks/dev/1618498481834-2021-04-15T14:54:41.834Z/sweatworks.zip"
         },
         "Handler": "s_getOnePublication.handler",
         "Runtime": "nodejs12.x",
@@ -527,7 +527,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/sweatworks/dev/1618429282392-2021-04-14T19:41:22.392Z/sweatworks.zip"
+          "S3Key": "serverless/sweatworks/dev/1618498481834-2021-04-15T14:54:41.834Z/sweatworks.zip"
         },
         "Handler": "s_createPublication.handler",
         "Runtime": "nodejs12.x",
@@ -552,7 +552,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/sweatworks/dev/1618429282392-2021-04-14T19:41:22.392Z/sweatworks.zip"
+          "S3Key": "serverless/sweatworks/dev/1618498481834-2021-04-15T14:54:41.834Z/sweatworks.zip"
         },
         "Handler": "s_updatePublication.handler",
         "Runtime": "nodejs12.x",
@@ -577,7 +577,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/sweatworks/dev/1618429282392-2021-04-14T19:41:22.392Z/sweatworks.zip"
+          "S3Key": "serverless/sweatworks/dev/1618498481834-2021-04-15T14:54:41.834Z/sweatworks.zip"
         },
         "Handler": "s_deleteOnePublication.handler",
         "Runtime": "nodejs12.x",
@@ -595,114 +595,114 @@
         "DeleteOnePublicationLogGroup"
       ]
     },
-    "GetAllAuthorsLambdaVersionHBY9TvGSw5ayFEPWiHLzvtBmpJR5ELHPOeh7ZsihLY": {
+    "GetAllAuthorsLambdaVersionWffsRnEZ6pCkh3P0uRPKL06KaABirCl3RhDZv4TU": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetAllAuthorsLambdaFunction"
         },
-        "CodeSha256": "iWP2cq0f+BBCDMbPUnCursz2xcejgx4SbL8xKIjeTlg="
+        "CodeSha256": "Ud3CdaaRHPCeBHF98mKbzEMJF8/xrZqdJ5CuUHMYpQE="
       }
     },
-    "GetOneAuthorLambdaVersionbiFnwsgKfO7dagNj2usjKuoaRh3sEGtF0F51KAQewc": {
+    "GetOneAuthorLambdaVersiony5FbNQymZF4TreUF7VaQMajNZC7Ti6i3OqOvVHki2nc": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetOneAuthorLambdaFunction"
         },
-        "CodeSha256": "iWP2cq0f+BBCDMbPUnCursz2xcejgx4SbL8xKIjeTlg="
+        "CodeSha256": "Ud3CdaaRHPCeBHF98mKbzEMJF8/xrZqdJ5CuUHMYpQE="
       }
     },
-    "CreateAuthorLambdaVersionQrLuJI5oUsz1ExiF7pnerVJqmIQ8NJU0MXZFoBHWY": {
+    "CreateAuthorLambdaVersiondlUNsTb9SBPjECFwFtwbR4hZwuXeGcvMTzoajGUZhd4": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "CreateAuthorLambdaFunction"
         },
-        "CodeSha256": "iWP2cq0f+BBCDMbPUnCursz2xcejgx4SbL8xKIjeTlg="
+        "CodeSha256": "Ud3CdaaRHPCeBHF98mKbzEMJF8/xrZqdJ5CuUHMYpQE="
       }
     },
-    "UpdateAuthorLambdaVersionqFiFfJiHcJU6Z9UusfOBe5EisRdqLTDq1ye2jXLQGXQ": {
+    "UpdateAuthorLambdaVersioncM1mZYi1EnOAxv1cyLshr50dictB8Jke2WB0Klos": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "UpdateAuthorLambdaFunction"
         },
-        "CodeSha256": "iWP2cq0f+BBCDMbPUnCursz2xcejgx4SbL8xKIjeTlg="
+        "CodeSha256": "Ud3CdaaRHPCeBHF98mKbzEMJF8/xrZqdJ5CuUHMYpQE="
       }
     },
-    "DeleteOneAuthorLambdaVersionmRvR34Fz3F7usVM1yk8skhRcTrEkZzPtiWfp26k": {
+    "DeleteOneAuthorLambdaVersionCfKzhGxQipK9jbklLEkSUaUX8hRphxMLptMIjtBe4": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "DeleteOneAuthorLambdaFunction"
         },
-        "CodeSha256": "iWP2cq0f+BBCDMbPUnCursz2xcejgx4SbL8xKIjeTlg="
+        "CodeSha256": "Ud3CdaaRHPCeBHF98mKbzEMJF8/xrZqdJ5CuUHMYpQE="
       }
     },
-    "GetFiltersPublicationsLambdaVersion9tszg9sxXhSNOwOVy4XgyaKpqgPCpgAbusUDwoo": {
+    "GetFiltersPublicationsLambdaVersionuTnHt6bzwKrgRsK6ktO0ZryEkwZt8uuDTTWFSTd2Sw": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetFiltersPublicationsLambdaFunction"
         },
-        "CodeSha256": "iWP2cq0f+BBCDMbPUnCursz2xcejgx4SbL8xKIjeTlg="
+        "CodeSha256": "Ud3CdaaRHPCeBHF98mKbzEMJF8/xrZqdJ5CuUHMYpQE="
       }
     },
-    "GetAllPublicationsLambdaVersionDZlFWtaqlQHRAS7l0a3pjqmYj9l6CXrAIlXkop0dfI": {
+    "GetAllPublicationsLambdaVersionn9NzTZKJLUM2QQ6jNCkJI98rU42GOjaSHxJwFkMNw0": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetAllPublicationsLambdaFunction"
         },
-        "CodeSha256": "iWP2cq0f+BBCDMbPUnCursz2xcejgx4SbL8xKIjeTlg="
+        "CodeSha256": "Ud3CdaaRHPCeBHF98mKbzEMJF8/xrZqdJ5CuUHMYpQE="
       }
     },
-    "GetOnePublicationLambdaVersionZjFHKPAv4afymsG8HI4bbHeDKBvAkbUQ3Fv2uQ6GPw": {
+    "GetOnePublicationLambdaVersionXYInSxq3Wy7VZZJHCBQtAWBEFFPTV11eFEDyEGsNg": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetOnePublicationLambdaFunction"
         },
-        "CodeSha256": "iWP2cq0f+BBCDMbPUnCursz2xcejgx4SbL8xKIjeTlg="
+        "CodeSha256": "Ud3CdaaRHPCeBHF98mKbzEMJF8/xrZqdJ5CuUHMYpQE="
       }
     },
-    "CreatePublicationLambdaVersionqHJqOBz8Z50L5d4g6uOQqd1z6m7MIApy6Pbq45DYOv0": {
+    "CreatePublicationLambdaVersionZPBDZSChr5Fq3zYluTlmbZ8A1Y19vjKnykFLfM4": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "CreatePublicationLambdaFunction"
         },
-        "CodeSha256": "iWP2cq0f+BBCDMbPUnCursz2xcejgx4SbL8xKIjeTlg="
+        "CodeSha256": "Ud3CdaaRHPCeBHF98mKbzEMJF8/xrZqdJ5CuUHMYpQE="
       }
     },
-    "UpdatePublicationLambdaVersionPMCDG9cZv7pw37GtCxJZVbVy8R1hmPrEEhJ2q0M": {
+    "UpdatePublicationLambdaVersiong6GlrxZ7QxGfV3mPeKaClgpF2VfPYAhQDVQnj5f55Uk": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "UpdatePublicationLambdaFunction"
         },
-        "CodeSha256": "iWP2cq0f+BBCDMbPUnCursz2xcejgx4SbL8xKIjeTlg="
+        "CodeSha256": "Ud3CdaaRHPCeBHF98mKbzEMJF8/xrZqdJ5CuUHMYpQE="
       }
     },
-    "DeleteOnePublicationLambdaVersion6GT6y86S47wetibKgf2I2XikUjCOyF1POcXiVR3q4": {
+    "DeleteOnePublicationLambdaVersionos2WbpaPbSA1z17UHNgaRdRqEC6YOMMmEwjv34EE": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "DeleteOnePublicationLambdaFunction"
         },
-        "CodeSha256": "iWP2cq0f+BBCDMbPUnCursz2xcejgx4SbL8xKIjeTlg="
+        "CodeSha256": "Ud3CdaaRHPCeBHF98mKbzEMJF8/xrZqdJ5CuUHMYpQE="
       }
     },
     "ApiGatewayRestApi": {
@@ -1491,7 +1491,7 @@
         "MethodResponses": []
       }
     },
-    "ApiGatewayDeployment1618429251326": {
+    "ApiGatewayDeployment1618498451233": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -2034,7 +2034,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/sweatworks/dev/1618429282392-2021-04-14T19:41:22.392Z/custom-resources.zip"
+          "S3Key": "serverless/sweatworks/dev/1618498481834-2021-04-15T14:54:41.834Z/custom-resources.zip"
         },
         "FunctionName": "sweatworks-dev-custom-resource-apigw-cw-role",
         "Handler": "apiGatewayCloudWatchRole/handler.handler",
@@ -2190,67 +2190,67 @@
     "GetAllAuthorsLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetAllAuthorsLambdaVersionHBY9TvGSw5ayFEPWiHLzvtBmpJR5ELHPOeh7ZsihLY"
+        "Ref": "GetAllAuthorsLambdaVersionWffsRnEZ6pCkh3P0uRPKL06KaABirCl3RhDZv4TU"
       }
     },
     "GetOneAuthorLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetOneAuthorLambdaVersionbiFnwsgKfO7dagNj2usjKuoaRh3sEGtF0F51KAQewc"
+        "Ref": "GetOneAuthorLambdaVersiony5FbNQymZF4TreUF7VaQMajNZC7Ti6i3OqOvVHki2nc"
       }
     },
     "CreateAuthorLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "CreateAuthorLambdaVersionQrLuJI5oUsz1ExiF7pnerVJqmIQ8NJU0MXZFoBHWY"
+        "Ref": "CreateAuthorLambdaVersiondlUNsTb9SBPjECFwFtwbR4hZwuXeGcvMTzoajGUZhd4"
       }
     },
     "UpdateAuthorLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "UpdateAuthorLambdaVersionqFiFfJiHcJU6Z9UusfOBe5EisRdqLTDq1ye2jXLQGXQ"
+        "Ref": "UpdateAuthorLambdaVersioncM1mZYi1EnOAxv1cyLshr50dictB8Jke2WB0Klos"
       }
     },
     "DeleteOneAuthorLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "DeleteOneAuthorLambdaVersionmRvR34Fz3F7usVM1yk8skhRcTrEkZzPtiWfp26k"
+        "Ref": "DeleteOneAuthorLambdaVersionCfKzhGxQipK9jbklLEkSUaUX8hRphxMLptMIjtBe4"
       }
     },
     "GetFiltersPublicationsLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetFiltersPublicationsLambdaVersion9tszg9sxXhSNOwOVy4XgyaKpqgPCpgAbusUDwoo"
+        "Ref": "GetFiltersPublicationsLambdaVersionuTnHt6bzwKrgRsK6ktO0ZryEkwZt8uuDTTWFSTd2Sw"
       }
     },
     "GetAllPublicationsLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetAllPublicationsLambdaVersionDZlFWtaqlQHRAS7l0a3pjqmYj9l6CXrAIlXkop0dfI"
+        "Ref": "GetAllPublicationsLambdaVersionn9NzTZKJLUM2QQ6jNCkJI98rU42GOjaSHxJwFkMNw0"
       }
     },
     "GetOnePublicationLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetOnePublicationLambdaVersionZjFHKPAv4afymsG8HI4bbHeDKBvAkbUQ3Fv2uQ6GPw"
+        "Ref": "GetOnePublicationLambdaVersionXYInSxq3Wy7VZZJHCBQtAWBEFFPTV11eFEDyEGsNg"
       }
     },
     "CreatePublicationLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "CreatePublicationLambdaVersionqHJqOBz8Z50L5d4g6uOQqd1z6m7MIApy6Pbq45DYOv0"
+        "Ref": "CreatePublicationLambdaVersionZPBDZSChr5Fq3zYluTlmbZ8A1Y19vjKnykFLfM4"
       }
     },
     "UpdatePublicationLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "UpdatePublicationLambdaVersionPMCDG9cZv7pw37GtCxJZVbVy8R1hmPrEEhJ2q0M"
+        "Ref": "UpdatePublicationLambdaVersiong6GlrxZ7QxGfV3mPeKaClgpF2VfPYAhQDVQnj5f55Uk"
       }
     },
     "DeleteOnePublicationLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "DeleteOnePublicationLambdaVersion6GT6y86S47wetibKgf2I2XikUjCOyF1POcXiVR3q4"
+        "Ref": "DeleteOnePublicationLambdaVersionos2WbpaPbSA1z17UHNgaRdRqEC6YOMMmEwjv34EE"
       }
     },
     "ServiceEndpoint": {

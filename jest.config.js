@@ -1,7 +1,7 @@
 require('dotenv').config()
 
 module.exports = {
-  moduleDirectories: ['node_modules', '.'],
+  moduleDirectories: ['node_modules', 'src'],
   setupFilesAfterEnv: ['./testSetupPerFile.js', 'jest-extended'],
   testEnvironment: 'node',
   clearMocks: true,
@@ -21,7 +21,7 @@ module.exports = {
     }
   },
   coverageReporters: ['html', 'text-summary'],
-  collectCoverageFrom: ['be/**/*.js'],
+  collectCoverageFrom: ['src/**/*.js'],
   coveragePathIgnorePatterns: ['/node_modules/', '/config/'],
   verbose: true
 }
