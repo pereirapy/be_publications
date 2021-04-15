@@ -72,7 +72,7 @@ const getPagingData = (data, currentPage, limitPerPage) => {
 const callbackSuccessful = (callback, body) =>
   callback(null, {
     statusCode: 200,
-    body,
+    body: JSON.stringify(body),
     headers: {
       'Access-Control-Allow-Origin': '*',
       'Access-Control-Allow-Credentials': true

@@ -1,10 +1,11 @@
 {
   "name": "sweatworks",
   "version": "1.0.0",
-  "description": "",
+  "description": "Test for SweatWorks",
   "main": "handler.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "NODE_ENV=test ./node_modules/.bin/sequelize db:migrate && node ./node_modules/jest/bin/jest.js --forceExit --detectOpenHandles --runInBand",
+    "test:watch": "cross-env NODE_ENV=test node ./node_modules/jest/bin/jest.js --watch --detectOpenHandles --runInBand",
     "init": "npm install",
     "migrate": "./node_modules/.bin/sequelize db:migrate",
     "migrate:undo": "./node_modules/.bin/sequelize db:migrate:undo",
@@ -13,7 +14,7 @@
     "sequelize": "./node_modules/.bin/sequelize"
   },
   "keywords": [],
-  "author": "",
+  "author": "Rodrigo Pereira",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.13.10",

@@ -23,8 +23,8 @@ const getAll = async query => {
     offset,
     limit
   })
-  const response = getPagingData(data, currentPage, limit)
-  return JSON.stringify(response)
+  const result = getPagingData(data, currentPage, limit)
+  return result
 }
 
 const getFilters = async () => {
@@ -38,32 +38,32 @@ const getFilters = async () => {
     group: ['authorId', 'author.id', 'author.firstName', 'author.lastName']
   })
   const filters = { authors }
-  return JSON.stringify(filters)
+  return filters
 }
 
 const getOne = async id => {
-  const response = await publications.findOne({
+  const result = await publications.findOne({
     include: { model: authorsModel, as: 'author' },
     where: { id }
   })
-  return JSON.stringify(response)
+  return result
 }
 
 const create = async data => {
-  const response = await publications.create(JSON.parse(data))
-  return JSON.stringify(response)
+  const result = await publications.create(JSON.parse(data))
+  return result
 }
 
 const update = async (id, data) => {
-  const response = await publications.update(JSON.parse(data), {
+  const result = await publications.update(JSON.parse(data), {
     where: { id }
   })
-  return JSON.stringify(response)
+  return result
 }
 
 const deleteOne = async id => {
-  const response = await publications.destroy({ where: { id } })
-  return JSON.stringify(response)
+  const result = await publications.destroy({ where: { id } })
+  return result
 }
 
 module.exports = { getAll, getOne, create, update, deleteOne, getFilters }

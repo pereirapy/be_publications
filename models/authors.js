@@ -39,6 +39,14 @@ module.exports = (sequelize, DataTypes) => {
       birtyDate: {
         allowNull: false,
         type: DataTypes.DATEONLY
+      },
+      createdAt: {
+        allowNull: false,
+        type: DataTypes.DATE
+      },
+      updatedAt: {
+        allowNull: false,
+        type: DataTypes.DATE
       }
     },
     {
@@ -48,6 +56,7 @@ module.exports = (sequelize, DataTypes) => {
 
   authors.associate = models => {
     authors.hasMany(models.publications, {
+      foreignKey: 'authorId',
       as: 'publications'
     })
   }
