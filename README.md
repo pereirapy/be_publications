@@ -1,10 +1,14 @@
 # Getting Started 
 
 1 - npm install
+
 2 - change the credentials on .env file if you wants execute on localhost or to execute tests(the current value is for version online)
+
 3 - execute the following code if you want execute on localhost(online is not necessary): npm run migrate && npm run migrate seed
+
 4 -
   local: serverless offline
+  
   deploy: serverless deploy
 
 URL for test:
