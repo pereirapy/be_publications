@@ -1,22 +1,7 @@
 const authorsService = require('./authors.service')
 const { authors } = require('../../models')
 const { first, map, last } = require('lodash/fp')
-const stubAuthors = [
-  {
-    id: 1,
-    firstName: 'James',
-    lastName: 'Joyce',
-    email: 'james@hotmail.com',
-    birtyDate: '1901-07-06'
-  },
-  {
-    id: 2,
-    firstName: 'Marcel',
-    lastName: 'Proust',
-    email: 'marcel@hotmail.com',
-    birtyDate: '1900-07-11'
-  }
-]
+const { stubAuthors } = require('./authors.stub')
 
 const deleteAll = async () =>
   await authors.destroy({ truncate: true, cascade: true })
@@ -93,7 +78,7 @@ describe('Authors Service', () => {
   })
 
   describe('update()', () => {
-    test('Should return the number 1 because just one record was updated', async () => {
+    test('Should return an array with the number 1 because just one record was updated', async () => {
       expect.assertions(1)
       const updateAuthor = {
         id: 3,
