@@ -1,5 +1,5 @@
-const { sequelize, authors, publications } = require('../models')
-const { parseOrderBy } = require('../shared/helpers')
+const { sequelize, authors, publications } = require('../../models')
+const { parseOrderBy } = require('../../shared/helpers')
 const { getOr } = require('lodash/fp')
 
 const getAll = async query => {

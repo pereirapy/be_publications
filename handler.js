@@ -1,7 +1,7 @@
 'use strict'
 require('dotenv').config()
-const authorsController = require('./controllers/authors.controller')
-const publicationsController = require('./controllers/publications.controller')
+const authorsController = require('./src/modules/authors/authors.controller')
+const publicationsController = require('./src/modules/publications/publications.controller')
 
 const getAllAuthors = (event, context, callback) =>
   authorsController.getAll(event, context, callback)

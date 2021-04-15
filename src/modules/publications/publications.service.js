@@ -1,5 +1,5 @@
-const { authors: authorsModel, publications } = require('../models')
-const { parseQueryParams, getPagingData } = require('../shared/helpers')
+const { authors: authorsModel, publications } = require('../../models')
+const { parseQueryParams, getPagingData } = require('../../shared/helpers')
 const { getOr, isEmpty } = require('lodash/fp')
 const { Op } = require('sequelize')
 

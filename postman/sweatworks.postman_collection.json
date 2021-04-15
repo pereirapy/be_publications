@@ -9,64 +9,52 @@
 			"name": "authors",
 			"item": [
 				{
-					"name": "http://localhost:3000/dev/authors",
+					"name": "/dev/authors",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/dev/authors?sort=firstName:ASC",
-							"protocol": "http",
+							"raw": "{{server}}/dev/authors",
 							"host": [
-								"localhost"
+								"{{server}}"
 							],
-							"port": "3000",
 							"path": [
 								"dev",
 								"authors"
-							],
-							"query": [
-								{
-									"key": "sort",
-									"value": "firstName:ASC"
-								}
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "http://localhost:3000/dev/authors/3",
+					"name": "/dev/authors/3",
 					"request": {
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/dev/authors/3",
-							"protocol": "http",
+							"raw": "{{server}}/dev/authors/4",
 							"host": [
-								"localhost"
+								"{{server}}"
 							],
-							"port": "3000",
 							"path": [
 								"dev",
 								"authors",
-								"3"
+								"4"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "http://localhost:3000/dev/authors/1",
+					"name": "/dev/authors/1",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/dev/authors/1",
-							"protocol": "http",
+							"raw": "{{server}}/dev/authors/1",
 							"host": [
-								"localhost"
+								"{{server}}"
 							],
-							"port": "3000",
 							"path": [
 								"dev",
 								"authors",
@@ -77,7 +65,7 @@
 					"response": []
 				},
 				{
-					"name": "http://localhost:3000/dev/authors/",
+					"name": "/dev/authors/",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -91,12 +79,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/dev/authors/",
-							"protocol": "http",
+							"raw": "{{server}}/dev/authors/",
 							"host": [
-								"localhost"
+								"{{server}}"
 							],
-							"port": "3000",
 							"path": [
 								"dev",
 								"authors",
@@ -107,7 +93,7 @@
 					"response": []
 				},
 				{
-					"name": "http://localhost:3000/dev/authors/3",
+					"name": "/dev/authors/3",
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -121,12 +107,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/dev/authors/3",
-							"protocol": "http",
+							"raw": "{{server}}/dev/authors/3",
 							"host": [
-								"localhost"
+								"{{server}}"
 							],
-							"port": "3000",
 							"path": [
 								"dev",
 								"authors",
@@ -142,25 +126,23 @@
 			"name": "publications",
 			"item": [
 				{
-					"name": "http://localhost:3000/dev/publications",
+					"name": "/dev/publications",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/dev/authors?sort=firstName:ASC",
-							"protocol": "http",
+							"raw": "{{server}}/dev/publications?sort=title:ASC",
 							"host": [
-								"localhost"
+								"{{server}}"
 							],
-							"port": "3000",
 							"path": [
 								"dev",
-								"authors"
+								"publications"
 							],
 							"query": [
 								{
 									"key": "sort",
-									"value": "firstName:ASC"
+									"value": "title:ASC"
 								}
 							]
 						}
@@ -168,41 +150,37 @@
 					"response": []
 				},
 				{
-					"name": "http://localhost:3000/dev/publications/3",
+					"name": "/dev/publications/3",
 					"request": {
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/dev/authors/3",
-							"protocol": "http",
+							"raw": "{{server}}/dev/publications/5",
 							"host": [
-								"localhost"
+								"{{server}}"
 							],
-							"port": "3000",
 							"path": [
 								"dev",
-								"authors",
-								"3"
+								"publications",
+								"5"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "http://localhost:3000/dev/publications/1",
+					"name": "/dev/publications/1",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/dev/authors/1",
-							"protocol": "http",
+							"raw": "{{server}}/dev/publications/1",
 							"host": [
-								"localhost"
+								"{{server}}"
 							],
-							"port": "3000",
 							"path": [
 								"dev",
-								"authors",
+								"publications",
 								"1"
 							]
 						}
@@ -210,13 +188,13 @@
 					"response": []
 				},
 				{
-					"name": "http://localhost:3000/dev/publications/",
+					"name": "/dev/publications/",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"title\": \"title\",\n  \"body\": \"body\",\n  \"authorId\": 1\n}\n",
+							"raw": "{\n  \"title\": \"title 2\",\n  \"body\": \"body 2\",\n  \"authorId\": 5\n}\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -224,12 +202,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/dev/publications/",
-							"protocol": "http",
+							"raw": "{{server}}/dev/publications/",
 							"host": [
-								"localhost"
+								"{{server}}"
 							],
-							"port": "3000",
 							"path": [
 								"dev",
 								"publications",
@@ -240,7 +216,7 @@
 					"response": []
 				},
 				{
-					"name": "http://localhost:3000/dev/publications/3",
+					"name": "/dev/publications/3",
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -254,12 +230,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/dev/publications/5",
-							"protocol": "http",
+							"raw": "{{server}}/dev/publications/5",
 							"host": [
-								"localhost"
+								"{{server}}"
 							],
-							"port": "3000",
 							"path": [
 								"dev",
 								"publications",
